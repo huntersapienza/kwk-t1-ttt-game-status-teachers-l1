@@ -74,11 +74,12 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)[0] = "X"
-    return "X"
-  elsif won?(board)[0] = "O"
-    return "O"
-  else
-    return nil
+  if won?(board)
+    win_combination = won?(board)
+    winner_winner_chicken_dinner = win_combination[0]
+    if winner_winner_chicken_dinner == "X"
+      return "X"
+    else
+      return "O"
   end
 end
