@@ -50,4 +50,8 @@ def won?(board)
 end
 
 def full?(board)
-  
+  if board.include? " "
+    return false
+  board.each do |i|
+    if i.all?
+end
