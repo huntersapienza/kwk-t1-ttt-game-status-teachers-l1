@@ -74,9 +74,9 @@ def over?(board)
 end
 
 def winner?(board)
-  if win_combination[0] = "X"
+  if won?(board)[0] = "X"
     return "X"
-  elsif win_combination[0] = "O"
+  elsif won?(board)[0] = "O"
     return "O"
   else
     return nil
