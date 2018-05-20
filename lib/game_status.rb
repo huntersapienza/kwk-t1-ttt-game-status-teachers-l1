@@ -23,3 +23,7 @@ WIN_COMBINATIONS = [
   [3,4,5],
   [6,7,8]
 ]
+
+def won?(board)
+  board.each do |position|
+    if position.all? == " "
