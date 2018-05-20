@@ -77,7 +77,7 @@ def winner(board)
   if won?(board)
     win_combination = won?(board)
     winner_winner_chicken_dinner = win_combination[0]
-    if winner_winner_chicken_dinner == "X"
+    if board[winner_winner_chicken_dinner] == "X"
       return "X"
     else
       return "O"
