@@ -74,3 +74,11 @@ def over?(board)
 end
 
 def winner?(board)
+  if winner = "X"
+    return "X"
+  elsif winner = "O"
+    return "O"
+  else
+    return nil
+  end
+end
