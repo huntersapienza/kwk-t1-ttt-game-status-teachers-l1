@@ -41,7 +41,10 @@ def won?(board)
       return win_combination
       winner = "O"
     else
-      return false
+      win_combination=0
     end
+  end
+    if win_combination=0
+      return false
   end
 end
